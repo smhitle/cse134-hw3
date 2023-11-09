@@ -17,29 +17,29 @@
 body {
     background-color: var(--background-color, #c8c8c8);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: var(--body-size);
+    font-size: var(--body-size, 1.75em);
     padding: 0;
     margin: 0;
 }
 
 h1 {
-    font-size: var(--h1-size);
+    font-size: var(--h1-size, 1.75em);
 }
 
 h2 {
-    font-size: var(--h2-size);
+    font-size: var(--h2-size, 1.3em);
 }
 
 h3 {
-    font-size: var(--h3-size);
+    font-size: var(--h3-size, 1.1em);
 }
 
 h4 {
-    font-size: var(--h4-size);
+    font-size: var(--h4-size, 0.9em);
 }
 
-p, ul, figcaption, form, table {
-    font-size: var(--text-size);
+p, ul, form {
+    font-size: var(--text-size, 0.6em);
 }
 
 main {
@@ -90,7 +90,7 @@ nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    font-size: var(--nav-size);
+    font-size: var(--nav-size, 0.75em);
 }
 
 nav li {
@@ -100,7 +100,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: var(--link-color);
+    color: var(--link-color, #afafaf);
 }
 
 nav a:hover {
@@ -252,7 +252,6 @@ nav a:hover {
     color: var(--button-text-color, dimgray);
     border-radius: 5%;
     transition: background-color 0.5s ease;
-    /* color: beige; */
 }
 
 #contact form button:hover {
