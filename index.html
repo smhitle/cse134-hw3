@@ -6,9 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Website</title>
         <link rel="stylesheet" href="styles.css">
-        <style>
-
-        </style>
     </head>
     <body>
         <header>
@@ -27,10 +24,10 @@
         <main>
             <section id="about_me">
                 <picture>
-                    <source media="screen and (min-width: )" srcset="">
-                    <source type="image/jpeg" srcset="mypicture.jpg">
+                    <source type="image/webp" sizes="(min-width: 640px) 600w"  srcset="mypicture.webp">
+                    <source sizes="(min-width: 640px) 600w," type="image/jpeg" srcset="mypicture.jpg 600w">
                     <!-- Fallback -->
-                    <img src="mypicture.png" alt="Picture of Tyler" width="100%" height="100%" loading="lazy">
+                    <img src="mypicture.png" alt="Picture of Tyler" width="200" loading="lazy">
                 </picture>
                 <h2>About Me</h2>
                 <p>Hi, my name is Tyler and I am a student at the University of California, San Diego studying Mathematics-Computer Science. I have interests in many areas of programming, including game development and embedded programming, as well as emerging interests in machine learning. I am expecting to graduate June 2025.</p>
@@ -38,9 +35,9 @@
 
             <section id="education">
                 <picture>
-                    <source type="image/webp" srcset="logo.webp">
-                    <source type="image/jpeg" srcset="logo.jpg">
-                    <img src="logo.png" alt="UCSD logo" width="100%" height="100%" loading="lazy">
+                    <source type="image/webp" sizes="(min-width: 640px) 600w" srcset="logo.webp 600w">
+                    <source type="image/jpeg" sizes="(min-width: 640px) 600w" srcset="logo.jpg 600w">
+                    <img src="logo.png" alt="UCSD logo" width="200" loading="lazy">
                 </picture>
                 <h2>Education</h2>
                 <h3>University of California, San Diego</h3>
@@ -55,47 +52,41 @@
                 <h3>Projects</h3>
                 <article id="project1" class="project">
                     <h4>Bar Chart Racer</h4>
-                    <picture>
-                        <img src="" alt="Bar Chart Racer project image" loading="lazy" width="200">
-                    </picture>
                     <p>This is like the typical bar chart racers you see on YouTube, basically it takes in data from any range of years and then displays it as a bar chart</p>
                 </article><!--
             --><article id="project2" class="project">
                     <h4>Fun with Images</h4>
-                    <picture>
-                        <img src="" alt="Fun with Images project image" loading="lazy" width="200">
-                    </picture>
                     <p>This project revolves around image manipulation and can do things such as changing the background, flipping a region of the image and applying pixelization filters</p>
                 </article>
                 <h3>Extracirriculars</h3>
                 <article id="extra1" class="extra">
+                    <h4>RoboCup (IEEE at UCSD)</h4>
                     <picture>
-                        <source type="image/webp" srcset="">
-                        <source type="image/jpeg" srcset="robocup.jpg">
+                        <source type="image/webp" sizes="(min-width: 640px) 600w" srcset="robocup.webp 600w">
+                        <source type="image/jpeg" sizes="(min-width: 640px) 600w" srcset="robocup.jpg 600w">
                         <img src="robocup.png" alt="RoboCup UCSD Team logo" width="200" loading="lazy">
                     </picture>
-                    <h4>RoboCup (IEEE at UCSD)</h4>
                     <p>TritonBot Developer</p>
                     <p>Currently working to establish a fast and reliable line of communication between AI and embedded design</p>
                     <p>Also a general member of Institute of Electrical and Electronics Engineers or IEEE</p>
                 </article>
                 <article id="extra2" class="extra">
+                    <h4>Project Daedalus (Rocket Propulsion Laboratory)</h4>
                     <picture>
-                        <source type="image/webp" srcset="">
-                        <source type="image/jpeg" srcset="rpl.jpg">
+                        <source type="image/webp" sizes="(min-width: 640px) 600w" srcset="rpl.webp 600w">
+                        <source type="image/jpeg" sizes="(min-width: 640px) 600w" srcset="rpl.jpg 600w">
                         <img src="rpl.PNG" alt="Project Daedalus logo" width="200" loading="lazy">
                     </picture>
-                    <h4>Project Daedalus (Rocket Propulsion Laboratory)</h4>
                     <p>Team Member</p>
                     <p>Project Daedalus is one of the projects offered by Rocket Propulsion Laboratory which aims to allow students to build a G-class rocket from scratch and launch it</p>
                 </article>
                 <article id="extra3" class="extra">
+                    <h4>Association for Computing Machinery (ACM)</h4>
                     <picture>
-                        <source type="image/webp" srcset="">
-                        <source type="image/jpeg" srcset="ai.jpg">
+                        <source type="image/webp" sizes="(min-width: 640px) 600w" srcset="ai.webp 600w">
+                        <source type="image/jpeg" sizes="(min-width: 640px) 600w" srcset="ai.jpg 600w">
                         <img src="ai.png" alt="AI School logo" width="200" loading="lazy">
                     </picture>
-                    <h4>Association for Computing Machinery (ACM)</h4>
                     <p>General Member</p>
                     <p>Currently attending ACM's AI School to learn about machine learning, AI and neural networks</p>
                     <p>Attended a large variety of events such as socials, workshops and recruitment</p>

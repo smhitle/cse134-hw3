@@ -1,10 +1,13 @@
 @import url(vars.css);
 
 /* Font */
-/* @font-face {
-    font-family: ;
-    src: url();
-}  */
+ @font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}  
 
 * {
     box-sizing: content-box;
@@ -13,8 +16,7 @@
 /* Body and General */
 body {
     background-color: var(--background-color, #c8c8c8);
-    /* color: var(--);
-    font-family: ; */
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: var(--body-size);
     padding: 0;
     margin: 0;
@@ -103,6 +105,7 @@ nav a {
 
 nav a:hover {
     color: var(--link-hover-color, #c8c8c8);
+    text-decoration: underline;
 }
 
 /* About Me */
@@ -190,18 +193,23 @@ nav a:hover {
     text-align: center;
 }
 
+.extra {
+    margin: 0 auto;
+}
+
 .extra h4 {
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
 }
 
 .extra p {
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
 }
 
 .extra picture {
-    float: right;
+    position: relative;
+    left: 40%;
 }
 
 .extra {
@@ -211,7 +219,6 @@ nav a:hover {
 /* Contact */
 
 #contact {
-    clear: both;
     padding: 2em;
 }
 
@@ -241,23 +248,27 @@ nav a:hover {
 #contact form button {
     width: 20vh;
     height: 5vh;
-    background-color: beige;
+    background-color: color(srgb 0.93 0.93 0.9);
     color: var(--button-text-color, dimgray);
     border-radius: 5%;
     transition: background-color 0.5s ease;
+    /* color: beige; */
 }
 
 #contact form button:hover {
-    background-color: grey;
+    background-color: color-mix(in srgb, #000 50%, white);
+    transform: translate(0, -10%);
 }
 
 
 /* Footer */
 
 
-footer p {
+/* Using the has() selector */
+footer:has(p) {
     text-align: center;
 }
+
 
 
 /* Media Queries */
